@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/css/bootstrap.min.css">
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <title>Floda Flower Online Store</title>
+</head>
+<body onclick="toggleMenu()">
+    <!--------------- top bar --------------->
+    <div class="container-fluid main_top_bar">
+        <div class="container">
+            <div class="row top_bar text-capitalize">
+                <div class="col-md-6 top_bar_left">
+                    <p class="text">Welcome to Floda online store</p>
+                </div>
+                <div class="col-md-6 top_bar_right">
+                    <div class="col-auto language_col">
+                        <div class="languages">
+                            <span>Languages:</span>
+                            <img src="assets/img/icon/en.png" alt="">
+                            <strong>English <i class="fa fa-angle-down"></i></strong>
+                            <ul class="home_pages">
+                                <li class="home_page"><a href="#" class="home_page_link"><img src="assets/img/icon/en.png" alt="" class="me-2">English</a></li>
+                                <li class="home_page"><a href="#" class="home_page_link"><img src="assets/img/icon/de.png" alt="" class="me-2">french</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <div class="currency">
+                            <span>Currency:</span>
+                            <strong>$ USD <i class="fa fa-angle-down"></i></strong>
+                            <ul class="home_pages">
+                                <li class="home_page"><a href="#" class="home_page_link">$ USD </a></li>
+                                <li class="home_page"><a href="#" class="home_page_link"> € EURO</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+    </div>
+    <!--------------- header --------------->
+    <header class="header_area">
+        <div class="container header">
+            <div class="row header_row">
+                <div class="col-auto">
+                    <a href="index.html"><img src="assets/img/logo/logo.png" alt="site_logo"></a>
+                </div>
+                <div class="col-auto nav_area ms-md-auto">
+                    <nav>
+                        <ul class="nav">
+                            <li class="nav-item home"><a href="index.html" class="nav-link">home <!-- <i class="fa fa-angle-down"></i> --></a>
+                                <!-- <ul class="home_pages">
+                                    <li class="home_page"><a href="#" class="home_page_link">home version 01</a></li>
+                                    <li class="home_page"><a href="#" class="home_page_link">home version 02</a></li>
+                                    <li class="home_page"><a href="#" class="home_page_link">home version 03</a></li>
+                                    <li class="home_page"><a href="#" class="home_page_link">home version 04</a></li>
+                                </ul> -->
+                            </li>
+                            <li class="nav-item pages"><a href="#" class="nav-link">Pages <i class="fa fa-angle-down"></i></a>
+                                <ul class="all_pages">
+                                    <li class="home_page"><a href="#" class="home_page_link">column 01</a>
+                                        <ul class="pages_column">
+                                            <li class="home_page"><a href="products.html" class="home_page_link">shop grid left sidebar</a></li>
+                                            <li class="home_page"><a href="products.html" class="home_page_link">shop grid right sidebar</a></li>
+                                            <li class="home_page"><a href="products.html" class="home_page_link">shop list left sidebar</a></li>
+                                            <li class="home_page"><a href="products.html" class="home_page_link">shop list right sidebar</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="home_page"><a href="#" class="home_page_link">column 02</a>
+                                        <ul class="pages_column">
+                                            <li class="home_page"><a href="single-product.html" class="home_page_link">product details</a></li>
+                                            <li class="home_page"><a href="single-product.html" class="home_page_link">product details affiliate</a></li>
+                                            <li class="home_page"><a href="single-product.html" class="home_page_link">product details variables</a></li>
+                                            <li class="home_page"><a href="single-product.html" class="home_page_link">product details group</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="home_page"><a href="#" class="home_page_link">column 03</a>
+                                        <ul class="pages_column">
+                                            <li class="home_page"><a href="#" class="home_page_link" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">cart</a></li>
+                                            <li class="home_page"><a href="checkout.html" class="home_page_link">checkout</a></li>
+                                            <li class="home_page"><a href="wishlist.html" class="home_page_link">wishlist</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="home_page"><a href="#" class="home_page_link">column 04</a>
+                                        <ul class="pages_column">
+                                            <li class="home_page"><a href="my-account.html" class="home_page_link">My-Account</a></li>
+                                            <li class="home_page"><a href="login-register.html" class="home_page_link">login-Register</a></li>
+                                            <li class="home_page"><a href="contact-us.html" class="home_page_link">contact us</a></li>
+                                            <li class="home_page"><a href="faq.html" class="home_page_link">faq's</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item shop"><a href="products.html" class="nav-link">shop <i class="fa fa-angle-down"></i></a>
+                                <ul class="home_pages">
+                                    <li class="home_page grid_layout"><a href="products.html" class="home_page_link">shop grid layout</a>
+                                        <i class="fa fa-angle-right"></i>
+                                        <ul class="home_pages grid_layout_menu">
+                                            <li class="home_page"><a href="products.html" class="home_page_link">shop grid Left Sidebar</a></li>
+                                            <li class="home_page"><a href="products.html" class="home_page_link">shop grid right sidebar</a></li>
+                                            <li class="home_page"><a href="products.html" class="home_page_link">shop grid full 3 col</a></li>
+                                            <li class="home_page"><a href="products.html" class="home_page_link">shop grid full 4 col </a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="home_page list_layout"><a href="#" class="home_page_link">shop list layout</a>
+                                        <i class="fa fa-angle-right"></i>
+                                        <ul class="home_pages grid_layout_menu">
+                                            <li class="home_page"><a href="products.html" class="home_page_link">shop list Left Sidebar</a></li>
+                                            <li class="home_page"><a href="products.html" class="home_page_link">shop list right sidebar</a></li>
+                                            <li class="home_page"><a href="products.html" class="home_page_link">shop list full width</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="home_page p_details"><a href="#" class="home_page_link">product details</a>
+                                        <i class="fa fa-angle-right"></i>
+                                        <ul class="home_pages grid_layout_menu">
+                                            <li class="home_page"><a href="single-product.html" class="home_page_link">product details</a></li>
+                                            <li class="home_page"><a href="single-product.html" class="home_page_link">product details affiliate</a></li>
+                                            <li class="home_page"><a href="single-product.html" class="home_page_link">product details variables</a></li>
+                                            <li class="home_page"><a href="single-product.html" class="home_page_link">product details group</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item blog"><a href="single-product.html" class="nav-link">blog 
+                                <i class="fa fa-angle-down"></i></a>
+                                <ul class="home_pages">
+                                    <li class="home_page"><a href="single-product.html" class="home_page_link">blog left sidebar</a></li>
+                                    <li class="home_page"><a href="single-product.html" class="home_page_link">blog right sidebar</a></li>
+                                    <li class="home_page"><a href="single-product.html" class="home_page_link">blog grid no sidebar</a></li>
+                                    <li class="home_page"><a href="single-product.html" class="home_page_link">blog details</a></li>
+                                    <li class="home_page"><a href="single-product.html" class="home_page_link">blog details left sidebar</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item"><a href="#" class="nav-link">contact us</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-auto ms-md-auto ms-auto">
+                    <ul class="header_icons">
+                        <div class="desktop_icons d-flex">
+                            <li onclick="search_show();"><i class="icon search_icon fa-solid fa-magnifying-glass"></i></li>
+                            <li class="user"><i class="icon fa-solid fa-user"></i>
+                            <ul class="home_pages">
+                                <li class="home_page"><a href="login-register.html" class="home_page_link">Login</a></li>
+                                <li class="home_page"><a href="login-register.html" class="home_page_link">register</a></li>
+                                <li class="home_page"><a href="my-account.html" class="home_page_link">my account</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="wishlist.html"><i class="icon fa-regular fa-heart"><sup class="notification">1</sup></i></a></li>
+                        </div>
+                        <li><i class="icon fa-solid fa-cart-shopping" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"><sup class="notification">1</sup></i></li>
+                        <li>
+                            <div class="toggle-icon" onclick="toggleMenu()" data-bs-toggle="offcanvas" data-bs-target="#mobile_navbar" aria-controls="mobile_navbar">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <form action="#">
+                <input type="search" name="search_box" id="search_box" placeholder="Search" class="form-control p-3 my-3 main_search">
+            </form>
+        </div>
+    </header>
+    <!--------------- Wishlist Page start --------------->
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <table class="wishlist_table">
+                    <thead>
+                        <th class="wishlist_img">thumbnail</th>
+                        <th class="wishlist_name">product</th>
+                        <th class="wishlist_price">price</th>
+                        <th class="wishlist_stock">stock</th>
+                        <th class="wishlist_btn">add cart</th>
+                        <th class="wishlist_trash">remove</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="wishlist_img"><a href="#"><img src="assets/img/product/product-5.jpg" alt="Product" class="img-fluid wishlist_img" /></a></td>
+                            <td><a href="#">Rose Bouquet White</a></td>
+                            <td><b>$295</b></td>
+                            <td class="wishlist_stock_value">150 in stock</td>
+                            <td class="cart_text"><button class="btn wishlist_cart_btn" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Add to Cart"  data-bs-custom-class="custom-tooltip"><i class="fa-solid fa-cart-shopping" ></i></button></td>
+                            <td><i class="fa-regular fa-trash-can"></i></td>
+                        </tr>
+                        <tr>
+                            <td class="wishlist_img"><a href="#"><img src="assets/img/product/product-1.jpg" alt="Product" class="img-fluid wishlist_img" /></a></td>
+                            <td><a href="#">Rose Bouquet White</a></td>
+                            <td><b>$295</b></td>
+                            <td class="wishlist_stock_value">200 in stock</td>
+                            <td class="cart_text"><button class="btn wishlist_cart_btn" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Add t cart"  data-bs-custom-class="custom-tooltip"><i class="fa-solid fa-cart-shopping"></i></button></td>
+                            <td><i class="fa-regular fa-trash-can"></i></td>
+                        </tr>
+                        <tr>
+                            <td class="wishlist_img"><a href="#"><img src="assets/img/product/product-3.jpg" alt="Product" class="img-fluid wishlist_img" /></a></td>
+                            <td><a href="#">Rose Bouquet White</a></td>
+                            <td><b>$295</b></td>
+                            <td class="wishlist_stock_value">100 in stock</td>
+                            <td class="cart_text"><button class="btn wishlist_cart_btn" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Add t cart"  data-bs-custom-class="custom-tooltip"><i class="fa-solid fa-cart-shopping"></i></button></td>
+                            <td><i class="fa-regular fa-trash-can"></i></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!--------------- Wishlist Page End --------------->
+<!--------------- footer --------------->
+<footer id="footer">
+    <div class="container">
+        <div class="row footer">
+            <div class="col-lg-2 col-md-6 col-sm-4 categories">
+                <h5>Categories</h5>
+                <ul class="footer_categories">
+                    <li><a href="#">E-commerce</a></li>
+                    <li><a href="#">shopify</a></li>
+                    <li><a href="#">Presta shop</a></li>
+                    <li><a href="#">Open cart</a></li>
+                    <li><a href="#">Magento</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-4 information">
+                <h5>information</h5>
+                <ul class="footer_categories">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="contact-us.html">About Us</a></li>
+                    <li><a href="contact-us.html">Contact Us</a></li>
+                    <li><a href="wishlist.html">Exchanges</a></li>
+                    <li><a href="login-register.html">Shipping</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-4 quick_link">
+                <h5>quick links</h5>
+                <ul class="footer_categories">
+                    <li><a href="contact-us.html">store location</a></li>
+                    <li><a href="my-account.html">my account</a></li>
+                    <li><a href="contact-us.html">orders tracking</a></li>
+                    <li><a href="single-product.html">size guide</a></li>
+                    <li><a href="contact-us.html">contact us</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 account_details">
+                <h5>my account</h5>
+                <p><i class="fa-solid fa-location-dot"></i> 184 Main Rd E, St Albans VIC 3021, Australia</p>
+                <p><i class="fa-solid fa-envelope"></i> Mail us: <b>mm1700254@gmail.com</b></p>
+                <p><i class="fa-brands fa-whatsapp"></i> WhatsApp: <b>03094344186</b></p>
+                <img src="assets/img/payment-pic.png" alt="payment method" class="payment_method_i1">
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bottom_bar">
+        <div class="container">
+            <div class="row bottom_text align-items-center">
+                <div class="col-auto bottom_text">
+                    <p>&copy; 2023 <b>Flower Shop</b> Made with <i class="fa fa-heart text-danger"></i> by <b>Muhammad Mujahid</b></p>
+                </div>
+                <div class="col-auto ms-sm-auto">
+                    <div class="footer_social_link">
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+    <!--------------- Quick View Modal --------------->
+    <div class="modal fade" id="exampleModalCenter">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+            <div class="modal-body">
+                <div class="row align-items-center">
+                    <div class="col-lg-5 col-12">
+                        <div class="row align-items-center">
+                            <div class="col-lg-12 col-9">
+                                <div class="modal_large_img">
+                                    <img src="assets/img/product/product-details-img1.jpg" alt="product-details" class="img-fluid modal_img"/>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-3">
+                                <div class="model_sm_img modal_slider">
+                                    <div class="modal_slide">
+                                        <img src="assets/img/product/product-details-img2.jpg" alt="product-details" class="img-fluid modal_slide_img"/>
+                                    </div>
+                                    <div class="modal_slide">
+                                        <img src="assets/img/product/product-details-img3.jpg" alt="product-details" class="img-fluid modal_slide_img"/>
+                                    </div>
+                                    <div class="modal_slide">
+                                        <img src="assets/img/product/product-details-img4.jpg" alt="product-details" class="img-fluid modal_slide_img"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 col-12">
+                        <div class="product_details ms-md-5 model_details">
+                            <a href="#">Blossom bouquet flower</a> <br>
+                            <div class="p_icons">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <span class="review">1 Reviews</span>
+                            </div>
+                            <div class="price_text">
+                                <div class="price">
+                                    <span>$ 40.00</span> <span><del class="text-muted ms-3">$ 60.00</del></span>
+                                </div>
+                                <div class="offer_text ms-2">
+                                    <strong>hurry up!</strong> <span>offer end in</span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-auto">
+                                    <div class="counter d-flex" data-countdown="2025/05/25">
+                                        <div class="days text-center">
+                                            <span class="time_no day">502</span> <br>
+                                            <span class="time_text">Days</span>
+                                        </div>
+                                        <div class="hours text-center">
+                                            <span class="time_no hour">12</span> <br>
+                                            <span class="time_text">Hours</span>
+                                        </div>
+                                        <div class="mins text-center">
+                                            <span class="time_no min">40</span> <br>
+                                            <span class="time_text">Mins</span>
+                                        </div>
+                                        <div class="sec text-center">
+                                            <span class="time_no secs">02</span> <br>
+                                            <span class="time_text">Secs</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="stock_detail"><i class="fa fa-check-circle"></i><input type="text" class="stock_value" value="200" readonly> IN STOCK</p>
+                            <p class="modal_description">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</p>
+                            <div class="quantity">
+                                <span class="btn modal_btn">add to cart <i class="fa-solid fa-cart-shopping ms-2"></i></span>
+                            </div>
+                            <div class="like_icon">
+                                <a class="facebook" href="#"><i class="fa-brands fa-facebook-f"></i> like</a>
+                                <a class="twitter" href="#"><i class="fa-brands fa-twitter"></i> tweet</a>
+                                <a class="pinterest" href="#"><i class="fa-brands fa-pinterest"></i> save</a>
+                                <a class="google" href="#"><i class="fa-brands fa-google-plus-g"></i>share</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+   <!--------------- Mini Cart List--------------->
+<div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+    <div class="offcanvas-body">
+        <section class="mini_cart_section">
+            <button type="button" class="btn cart_close_btn" data-bs-dismiss="offcanvas" aria-label="Close">&times;</button>
+            <div class="mini_cart_area">
+                <ul style="list-style: none; padding-left: 0%;">
+                    <li class="cart_item align-items-center">
+                        <div class="cart_item_img">
+                            <a href="product-details.html">
+                                <img src="assets/img/cart/cart-1.jpg" alt="product" class="img-fluid mini_cart_img">
+                            </a>
+                        </div>
+                        <div class="cart_item_details ms-3">
+                            <a href="product-details.html">Flowers bouquet pink for all flower lovers</a> <br>
+                            <div class="stock_price">
+                                <span class="stock_detail">$<input type="text" class="item_price ms-1" value="25" readonly></span>
+                                <span class="stock_detail"><i class="fa fa-check-circle"></i><input type="text" class="stock_value ms-2" value="200" readonly> IN STOCK</span>
+                            </div>
+                            <div class="quantity quantity_btn">
+                                    <button class="negative"><i class="fa-solid fa-minus"></i></button>
+                                    <input type="text" value="2" class="total_no">
+                                    <button class="plus"><i class="fa-solid fa-plus"></i></button>
+                                    <span> = </span>
+                                    <span> $ <input type="text" class="total_price" value="0" readonly></span> <br>
+                                    <span><small class="no_stock">Items unavailable. Apologies!</small></span>
+                            </div>
+                        </div>
+                        <span><button type="button" class="item_delete">&times;</button></span>
+                    </li>
+                    <li class="cart_item align-items-center">
+                        <div class="cart_item_img">
+                            <a href="product-details.html">
+                                <img src="assets/img/cart/cart-2.jpg" alt="product" class="img-fluid mini_cart_img">
+                            </a>
+                        </div>
+                        <div class="cart_item_details ms-3">
+                            <a href="product-details.html">Flowers bouquet pink for all flower lovers</a> <br>
+                            <div class="stock_price">
+                                <span class="stock_detail">$<input type="text" class="item_price ms-1" value="25" readonly></span>
+                                <span class="stock_detail"><i class="fa fa-check-circle"></i><input type="text" class="stock_value ms-2" value="200" readonly> IN STOCK</span>
+                            </div>
+                            <div class="quantity quantity_btn">
+                                    <button class="negative"><i class="fa-solid fa-minus"></i></button>
+                                    <input type="text" value="2" class="total_no">
+                                    <button class="plus"><i class="fa-solid fa-plus"></i></button>
+                                    <span> = </span>
+                                    <span> $ <input type="text" class="total_price" value="0" readonly></span> <br>
+                                    <span><small class="no_stock">Items unavailable. Apologies!</small></span>
+                            </div>
+                        </div>
+                        <span><button type="button" class="item_delete">&times;</button></span>
+                    </li>
+                    <li class="cart_item align-items-center">
+                        <div class="cart_item_img">
+                            <a href="product-details.html">
+                                <img src="assets/img/cart/cart-1.jpg" alt="product" class="img-fluid mini_cart_img">
+                            </a>
+                        </div>
+                        <div class="cart_item_details ms-3">
+                            <a href="product-details.html">Flowers bouquet pink for all flower lovers</a> <br>
+                            <div class="stock_price">
+                                <span class="stock_detail">$<input type="text" class="item_price ms-1" value="25" readonly></span>
+                                <span class="stock_detail"><i class="fa fa-check-circle"></i><input type="text" class="stock_value ms-2" value="200" readonly> IN STOCK</span>
+                            </div>
+                            <div class="quantity quantity_btn">
+                                    <button class="negative"><i class="fa-solid fa-minus"></i></button>
+                                    <input type="text" value="2" class="total_no">
+                                    <button class="plus"><i class="fa-solid fa-plus"></i></button>
+                                    <span> = </span>
+                                    <span> $ <input type="text" class="total_price" value="0" readonly></span> <br>
+                                    <span><small class="no_stock">Items unavailable. Apologies!</small></span>
+                            </div>
+                        </div>
+                        <span><button type="button" class="item_delete">&times;</button></span>
+                    </li>
+                </ul>
+                <div class="row mini_cart_total text-capitalize">
+                   <div class="col">
+                    <span class="sub_total_text">sub-total</span>
+                   </div>
+                   <div class="col  text-end">
+                    <span>$ <input type="text" value="200" class="sub_total_price" readonly></span>
+                   </div>
+                </div>
+                <div class="row mini_cart_total text-capitalize">
+                    <div class="col">
+                     <span class="sub_total_text">Eco Tax (-2.00)</span>
+                    </div>
+                    <div class="col  text-end">
+                     <span>$ <input type="text" value="200" class="sub_total_price" readonly></span>
+                    </div>
+                 </div>
+                 <div class="row mini_cart_total text-capitalize">
+                    <div class="col">
+                     <span class="sub_total_text">VAT (20%)</span>
+                    </div>
+                    <div class="col  text-end">
+                     <span>$ <input type="text" value="200" class="sub_total_price" readonly></span>
+                    </div>
+                 </div>
+                 <div class="row mini_cart_total text-capitalize">
+                    <div class="col">
+                     <span class="sub_total_text">total</span>
+                    </div>
+                    <div class="col  text-end">
+                     <span>$ <input type="text" value="200" class="sub_total_price" readonly></span>
+                    </div>
+                 </div>
+                 <hr class="my-4">
+                 <button class="btn btn-danger modal_btn btn-lg w-100 py-3">View Cart</button>
+            </div>
+        </section>
+    </div>
+</div>
+   <!--------------- Mobile Navigation --------------->
+   <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="mobile_navbar" aria-labelledby="mobile_navbar">
+    <div class="offcanvas-body">
+        <div class="mini_cart_section">
+            <button type="button" class="btn cart_close_btn" data-bs-dismiss="offcanvas" aria-label="Close">&times;</button>
+        </div>
+        <h4>Welcome To Floda Online Store</h4>
+        <form class="search_box form-control" role="search">
+            <input class="search_input" type="search" placeholder="Search" aria-label="Search">
+            <button class="search_btn" type="submit"><i class="icon fa-solid fa-magnifying-glass"></i></button>
+        </form>
+        <nav class="mobile_nav">
+            <ul class="main_list">
+                <li class="nav_li"><span class="nav_text"><a href="index.html">home</a><!-- <span class="more_list"><i class="fa-solid fa-plus"></i></span> --></span>
+                    <!-- <ul class="home_list">
+                        <li class="home_page"><a href="#" class="home_page_link">home version 01</a></li>
+                        <li class="home_page"><a href="#" class="home_page_link">home version 02</a></li>
+                        <li class="home_page"><a href="#" class="home_page_link">home version 03</a></li>
+                        <li class="home_page"><a href="#" class="home_page_link">home version 04</a></li>
+                    </ul> -->
+                </li>
+                <li class="nav_li"><span class="nav_text"><a href="products.html">pages</a><span class="more_list"><i class="fa-solid fa-plus"></i></span></span>
+                    <ul class="home_list">
+                        <li><span class="nav_text"><a href="products.html">Column 01</a><span class="more_list"><i class="fa-solid fa-plus"></i></span></span>
+                            <ul class="home_list">
+                                <li class="home_page"><a href="products.html" class="home_page_link">shop grid left sidebar</a></li>
+                                <li class="home_page"><a href="products.html" class="home_page_link">shop grid left sidebar</a></li>
+                                <li class="home_page"><a href="products.html" class="home_page_link">shop grid left sidebar</a></li>
+                                <li class="home_page"><a href="products.html" class="home_page_link">shop grid left sidebar</a></li>
+                            </ul>
+                        </li>
+                        <li><span class="nav_text"><a href="#">Column 02</a><span class="more_list"><i class="fa-solid fa-plus"></i></span></span>
+                            <ul class="home_list">
+                                <li class="home_page"><a href="single-product.html" class="home_page_link">product details</a></li>
+                                <li class="home_page"><a href="single-product.html" class="home_page_link">product details affiliate</a></li>
+                                <li class="home_page"><a href="single-product.html" class="home_page_link">product details variables</a></li>
+                                <li class="home_page"><a href="single-product.html" class="home_page_link">product details group</a></li>
+                            </ul>
+                        </li>
+                        <li><span class="nav_text"><a href="#">Column 03</a><span class="more_list"><i class="fa-solid fa-plus"></i></span></span>
+                            <ul class="home_list">
+                                <li class="home_page"><a href="#" class="home_page_link" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">cart</a></li>
+                                <li class="home_page"><a href="checkout.html" class="home_page_link">checkout</a></li>
+                                <li class="home_page"><a href="wishlist.html" class="home_page_link">wishlist</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav_li"><span class="nav_text"><a href="products.html">shop</a><span class="more_list"><i class="fa-solid fa-plus"></i></span></span>
+                    <ul class="home_list">
+                        <li><span class="nav_text"><a href="#">shop grid layout</a><span class="more_list"><i class="fa-solid fa-plus"></i></span></span>
+                            <ul class="home_list">
+                                <li class="home_page"><a href="products.html" class="home_page_link">shop grid left sidebar</a></li>
+                                <li class="home_page"><a href="products.html" class="home_page_link">shop grid left sidebar</a></li>
+                                <li class="home_page"><a href="products.html" class="home_page_link">shop grid left sidebar</a></li>
+                                <li class="home_page"><a href="products.html" class="home_page_link">shop grid left sidebar</a></li>
+                            </ul>
+                        </li>
+                        <li><span class="nav_text"><a href="products.html">shop list layout</a><span class="more_list"><i class="fa-solid fa-plus"></i></span></span>
+                            <ul class="home_list">
+                                <li class="home_page"><a href="single-product.html" class="home_page_link">product details</a></li>
+                                <li class="home_page"><a href="single-product.html" class="home_page_link">product details affiliate</a></li>
+                                <li class="home_page"><a href="single-product.html" class="home_page_link">product details variables</a></li>
+                                <li class="home_page"><a href="single-product.html" class="home_page_link">product details group</a></li>
+                            </ul>
+                        </li>
+                        <li><span class="nav_text"><a href="single-product.html">products details</a><span class="more_list"><i class="fa-solid fa-plus"></i></span></span>
+                            <ul class="home_list">
+                                <li class="home_page"><a href="#" class="home_page_link" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">cart</a></li>
+                                <li class="home_page"><a href="checkout.html" class="home_page_link">checkout</a></li>
+                                <li class="home_page"><a href="wishlist.html" class="home_page_link">wishlist</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav_li"><span class="nav_text"><a href="single-product.html">blog</a><span class="more_list"><i class="fa-solid fa-plus"></i></span></span>
+                    <ul class="home_list">
+                        <li class="home_page"><a href="single-product.html" class="home_page_link">blog left sidebar</a></li>
+                        <li class="home_page"><a href="single-product.html" class="home_page_link">blog right sidebar</a></li>
+                        <li class="home_page"><a href="single-product.html" class="home_page_link">blog details </a></li>
+                        <li class="home_page"><a href="single-product.html" class="home_page_link">blog details left sidebar </a></li>
+                    </ul>
+                </li>
+                <li><a href="contact-us.html">contact us</a></li>
+            </ul>
+        </nav>
+        <div class="mobile_top_bar">
+            <hr>
+            <ul class="main_list">
+                <li class="nav_li"><span class="nav_text">Languages:<span class="more_list">
+                    <b>English</b> <i class="fa-solid fa-plus"></i></span></span>
+                    <ul class="home_list">
+                        <li class="home_page"><a href="#" class="home_page_link"><img src="assets/img/icon/en.png" alt="" class="me-4">English</a></li>
+                        <li class="home_page"><a href="#" class="home_page_link"><img src="assets/img/icon/de.png" alt="" class="me-4">french</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="main_list">
+                <li class="nav_li"><span class="nav_text">Currency:<span class="more_list">$ 
+                    <b>USD</b> <i class="fa-solid fa-plus"></i></span></span>
+                    <ul class="home_list">
+                        <li class="home_page"><a href="#" class="home_page_link">$ USD</a></li>
+                        <li class="home_page"><a href="#" class="home_page_link"> € EURO</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="main_list">
+                <li class="nav_li"><span class="nav_text"><i class="icon fa-solid fa-user"></i><span class="more_list">
+                    <i class="fa-solid fa-plus"></i></span></span>
+                    <ul class="home_list">
+                        <li class="home_page"><a href="login-register.html" class="home_page_link">Login</a></li>
+                        <li class="home_page"><a href="login-register.html" class="home_page_link">register</a></li>
+                        <li class="home_page"><a href="my-account.html" class="home_page_link">my account</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="mobile_footer">
+        <ul>
+            <li><div class="footer_social_link">
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div></li>
+        </ul>
+    </div>
+    </div>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="assets/js/script.js"></script>
+</body>
+</html>
