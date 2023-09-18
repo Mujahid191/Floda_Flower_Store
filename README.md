@@ -1,6 +1,7 @@
 # Floda_Flower_Store
 Explore our dynamic e-commerce platform crafted with HTML, CSS, Bootstrap, JavaScript, and jQuery. Shop effortlessly with features like a cart, wishlist, checkout, contact us, and a user-friendly "My Account" section with a responsive design for an enjoyable shopping experience.
 
+[**Step Into a World of Blooms - Explore the Demo**](https://mujahid191.github.io/Floda_Flower_Store/)
 
 ![Screenshot 2023-09-17 at 6 07 57 PM](https://github.com/Mujahid191/Floda_Flower_Store/assets/107375586/2ff4b073-b9b7-4e54-a560-6f1c4abf8e23)
 
